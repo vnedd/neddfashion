@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="reponsive.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="grid">
+                <div class="row">
+                    <div class="col col-lg-1 col-md-2 col-sm-2">
+                        <div class="header__logo">
+                            <a href="/index.html">
+                                <img src="./img/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-md-8 col-sm-0">
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item active">
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li class="header__menu-item header__menu__women">
+                                    <a href="/shop_page.html">WOMEN'S</a>
+                                    <ul class="header__menu__women-list">
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Dresses</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Top & Tees</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Skirts</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Jackets & Coats</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Pants & Capris</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Sweaters</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Pajamas & Robes</a>
+                                        </li>
+                                        <li class="header__menu__women-item">
+                                            <a href="#">Costumes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item header__menu__men">
+                                    <a href="/shop_page.html">MEN'S</a>
+                                    <ul class="header__menu__men-list">
+                                        <li class="header__menu__men-item">
+                                            <a href="#">Shirts</a>
+                                        </li>
+                                        <li class="header__menu__men-item">
+                                            <a href="#">Jackets & Coats</a>
+                                        </li>
+                                        <li class="header__menu__men-item">
+                                            <a href="#">Sweaters</a>
+                                        </li>
+                                        <li class="header__menu__men-item">
+                                            <a href="#">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        <li class="header__menu__men-item">
+                                            <a href="#">Pajamas & Robes</a>
+                                        </li>
+                                        <li class="header__menu__men-item">
+                                            <a href="#">Costumes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item header__menu__kid">
+                                    <a href="/shop_page.html">KID</a>
+                                    <ul class="header__menu__kid-list">
+                                        <li class="header__menu__kid-item">
+                                            <a href="#">Shirts</a>
+                                        </li>
+                                        <li class="header__menu__kid-item">
+                                            <a href="#">Jackets & Coats</a>
+                                        </li>
+                                        <li class="header__menu__kid-item">
+                                            <a href="#">Sweaters</a>
+                                        </li>
+                                        <li class="header__menu__kid-item">
+                                            <a href="#">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="./shop_page.html">ACCESSORIES</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="/blog_page.html">BLOG</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="/contact_page.html">ABOUT US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col col-lg-3 col-md-0 col-sm-10">
+                        <div class="header__search">
+                            <div class="header__search-box">
+                                <input placeholder="Search for anything" type="text" class="header__search-box-input">
+                                <div class="header__search-box-icon">
+                                    <i class=" fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="header__search-history">
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <span class="header__search-history-text">
+                                            Javascript python
+                                        </span>
+                                        <i class="header__search-history-close fa-solid fa-xmark"></i>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <span class="header__search-history-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        </span>
+                                        <i class="header__search-history-close fa-solid fa-xmark"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-1 col-md-0 col-sm-0">
+                        <div class="header__auth">
+                            <a href="#" class="register-btn header__auth-register">Register</a> /
+                            <a href="#" class="login-btn header__auth-login">Login</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-1 col-md-2 col-sm-0">
+                        <div class="header__services">
+                            <a href="#">
+                                <i class="header__services-favorite fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="header__services-cart fa-solid fa-cart-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="banner__large">
+                <div class="banner__large-direction">
+                    <button class="banner__large-direction-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="banner__large-direction-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="banner__large-list">
+                    <div class="banner__large-item " style="background-image: url(/img/slider/slide-1.jpg);">
+                        <div class="banner__large-item-content">
+                            <h3>You're Looking Good</h3>
+                            <h1>New Fashion</h1>
+                            <a href="#">Discover more</a>
+                        </div>
+                    </div>
+                    <div class="banner__large-item" style="background-image: url(/img/slider/slide-2.jpg);">
+                        <div class="banner__large-item-content">
+                            <h3>don't miss</h3>
+                            <h1>Mysrety Deals</h1>
+                            <a href="#">Discover more</a>
+                        </div>
+                    </div>
+                    <div class="banner__large-item " style="background-image: url(/img/slider/slide-3.jpg);">
+                        <div class="banner__large-item-content">
+                            <h3>You're Looking Good</h3>
+                            <h1>New Fashion</h1>
+                            <a href="#">Discover more</a>
+                        </div>
+                    </div>
+                    <div class="banner__large-item" style="background-image: url(/img/slider/slide-4.jpg);">
+                        <div class="banner__large-item-content">
+                            <h3>You're Looking Good</h3>
+                            <h1>New Fashion</h1>
+                            <a href="#">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__small">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col col-lg-6 col-md-6 col-sm-12">
+                            <div class="banner__small-item">
+                                <div class="banner__small-item-img">
+                                    <img src="./img/banner_small/banner-1.jpg" alt="">
+                                </div>
+                                <div class="banner__small-item-content">
+                                    <h3>New In</h3>
+                                    <h1>Women's</h1>
+                                    <a href="/shop_page.html">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-12">
+                            <div class="banner__small-item">
+                                <div class="banner__small-item-img">
+                                    <img src="./img/banner_small/banner-2.jpg" alt="">
+                                </div>
+                                <div class="banner__small-item-content">
+                                    <h3>New In</h3>
+                                    <h1>Men's</h1>
+                                    <a href="/shop_page.html">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                        <div class="product__header">
+                            <div class="row">
+                                <div class="col col-lg-6 col-md-4 col-sm-12">
+                                    <h2 class="product__header-heading">NEW PRODUCT</h2>
+                                </div>
+                                <div class="col col-lg-6 col-md-8 col-sm-12">
+                                    <nav class="product__header-menu">
+                                        <ul class="product__header-menu-list">
+                                            <li data-set="all" class="product__header-menu-item product__panel active">All</li>
+                                            <li data-set="women" class="product__header-menu-item product__panel">Women's</li>
+                                            <li data-set="men" class="product__header-menu-item product__panel">Men's</li>
+                                            <li data-set="kid" class="product__header-menu-item product__panel">Kid's</li>
+                                            <li data-set="accessories" class="product__header-menu-item product__panel">Accessories</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product__wrapper">
+                    
+                    <!-- <div class="product__list show-product-by-panel">
+                        <div class="row">
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_4.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_5.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_4.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_4.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/accessories/accessories_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/accessories/accessories_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/accessories/accessories_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__list">
+                        <div class="row">
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_5.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_4.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_5.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_6.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_7.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_8.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/women/women_9.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="product__list">
+                        <div class="row">
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_4.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/men/men_5.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__list">
+                        <div class="row">
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/kid/kid_4.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__list">
+                        <div class="row">
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/accessories/accessories_1.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/accessories/accessories_2.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-6">
+                                <div class="product__item">
+                                    <p class="product__status product__status-discount">
+                                        <span>
+                                            Discount 50%
+                                        </span>
+                                    </p>
+                                    <div class="product__img">
+                                        <img src="./img/products/accessories/accessories_3.jpg" alt="">
+                                    </div>
+                                    <div class="product__details">
+                                        <p class="product__name">Buttons tweed blazer Buttons tweed blazerButtons tweed
+                                            blazer</p>
+                                        <div class="product__rating">
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star"></i>
+                                            <i class="product__rating-star fa-solid fa-star-half"></i>
+                                            <span>(6,827)</span>
+                                        </div>
+                                        <p class="product__price">
+                                            <span class="product__price-old">$150</span>
+                                            <span class="product__price-cur">$<span>99</span></span>
+                                        </p>
+                                        <p class="product__author">By Nedd store</p>
+                                    </div>
+                                    <div class="product__services">
+                                        <div class="product__services-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product__services-add-cart">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div class="category__header">
+                            <h1>Categories Popular</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-lg-3 col-md-6 col-sm-12">
+                        <div class="category__item show-by-scroll left-to-right">
+                            <div class="category__item-img">
+                                <img src="./img/category/category_1.jpg" alt="">
+                            </div>
+                            <div class="category__item-content">
+                                <div class="category__item-info">
+                                    <h4 class="category__item-heading">
+                                        Accessories
+                                    </h4>
+                                    <p class="category__item-quantity">
+                                        456 Products
+                                    </p>
+                                </div>
+                                <a href="#" class="catygory__item-link">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-md-12 col-sm-12 large-order">
+                        <div class="row">
+                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                <div class="category__item small-pic show-by-scroll left-to-right">
+                                    <div class="category__item-img">
+                                        <img src="./img/category/category_2.jpg" alt="">
+                                    </div>
+                                    <div class="category__item-content">
+                                        <div class="category__item-info">
+                                            <h4 class="category__item-heading">
+                                                Women's
+                                            </h4>
+                                            <p class="category__item-quantity">
+                                                1162 Products
+                                            </p>
+                                        </div>
+                                        <a href="#" class="catygory__item-link">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-12 col-md-12 col-sm-12">
+                                <div class="category__item small-pic show-by-scroll right-to-left">
+                                    <div class="category__item-img">
+                                        <img src="./img/category/category_3.jpg" alt="">
+                                    </div>
+                                    <div class="category__item-content">
+                                        <div class="category__item-info">
+                                            <h4 class="category__item-heading">
+                                                Men's
+                                            </h4>
+                                            <p class="category__item-quantity">
+                                                126 Products
+                                            </p>
+                                        </div>
+                                        <a href="#" class="catygory__item-link">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-sm-12">
+                        <div class="category__item show-by-scroll right-to-left">
+                            <div class="category__item-img">
+                                <img src="./img/category/category_4.jpg" alt="">
+                            </div>
+                            <div class="category__item-content">
+                                <div class="category__item-info">
+                                    <h4 class="category__item-heading">
+                                        Kid's
+                                    </h4>
+                                    <p class="category__item-quantity">
+                                        456 Products
+                                    </p>
+                                </div>
+                                <a href="#" class="catygory__item-link">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div class="feature__header">
+                            <h1>Feature Item</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__wrapper">
+                    <div class="feature__list">
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_1.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_2.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_3.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_4.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_5.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_6.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_7.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <div class="feature__img">
+                                <img src="/img/feature/feature_5.jpg" alt="">
+                            </div>
+                            <div class="feature__item-info">
+                                <h3 class="feature__item-name">
+                                    Stay Positive Lightweight Sweatshirt
+                                </h3>
+                                <p class="feature__item-auth">
+                                    by <b>Steven Rhodes</b>
+                                </p>
+                                <div class="feature__item-price">
+                                    From 29.99$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="feature__direction-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="feature__direction-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="home__blog">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div class="home__blog-header">
+                            <h1>Our Blogs</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <a href="/blog_page.html" class="home__blog-item">
+                            <div class="home__blog-item-img">
+                                <img src="/img/blogs/blog_2.jpg" alt="" srcset="">
+                            </div>
+                            <div class="home__blog-item-info">
+                                <h2 class="home__blog-item-title">
+                                    9 New Balance Sneakers That Will Always Have a Place in Your Closet
+                                </h2>
+                                <div class="home__blog-item-summary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusamus
+                                    blanditiis at commodi neque voluptatum molestiae pariatur reprehenderit maxime
+                                    libero eius dolor! Recusandae dolore maiores ratione. Veniam magni deserunt at?
+                                </div>
+                                <div class="home__blog-item-source">
+                                    <h3 class="home__blog-item-auth">by Nedd</h3>
+                                    <span> - </span>
+                                    <p class="home__blog-item-published">Aug 2, 2022</p>
+                                </div>
+
+                            </div>
+                            <button class="home__blog-item-readmore">
+                                Read More
+                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <a href="/blog_page.html" class="home__blog-item">
+                            <div class="home__blog-item-img">
+                                <img src="/img/blogs/blog_3.jpg" alt="" srcset="">
+                            </div>
+                            <div class="home__blog-item-info">
+                                <h2 class="home__blog-item-title">
+                                    9 New Balance Sneakers That Will Always Have a Place in Your Closet
+                                </h2>
+                                <div class="home__blog-item-summary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusamus
+                                    blanditiis at commodi neque voluptatum molestiae pariatur reprehenderit maxime
+                                    libero eius dolor! Recusandae dolore maiores ratione. Veniam magni deserunt at?
+                                </div>
+                                <div class="home__blog-item-source">
+                                    <h3 class="home__blog-item-auth">by Nedd</h3>
+                                    <span> - </span>
+                                    <p class="home__blog-item-published">Aug 2, 2022</p>
+                                </div>
+
+                            </div>
+                            <button class="home__blog-item-readmore">
+                                Read More
+                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <a href="/blog_page.html" class="home__blog-item">
+                            <div class="home__blog-item-img">
+                                <img src="/img/blogs/blog_1.jpg" alt="" srcset="">
+                            </div>
+                            <div class="home__blog-item-info">
+                                <h2 class="home__blog-item-title">
+                                    9 New Balance Sneakers That Will Always Have a Place in Your Closet
+                                </h2>
+                                <div class="home__blog-item-summary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusamus
+                                    blanditiis at commodi neque voluptatum molestiae pariatur reprehenderit maxime
+                                    libero eius dolor! Recusandae dolore maiores ratione. Veniam magni deserunt at?
+                                </div>
+                                <div class="home__blog-item-source">
+                                    <h3 class="home__blog-item-auth">by Nedd</h3>
+                                    <span> - </span>
+                                    <p class="home__blog-item-published">Aug 2, 2022</p>
+                                </div>
+
+                            </div>
+                            <button class="home__blog-item-readmore">
+                                Read More
+                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-lg-12 col-md-2 col-sm-12">
+                        <div class="home__blog-viewmore">
+                            <a href="/blog_page.html">
+                                view more
+                                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col col-lg-3 col-md-6 col-sm-6">
+                        <div class="services__item">
+                            <div class="services__icon">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div class="services__info">
+                                <p class="services__name">
+                                    Free Shipping
+                                </p>
+                                <p class="services__desc">
+                                    For all order over $99
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-sm-6">
+                        <div class="services__item">
+                            <div class="services__icon">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                            </div>
+                            <div class="services__info">
+                                <p class="services__name">
+                                    Return & Refund
+                                </p>
+                                <p class="services__desc">
+                                    Free 100% money back guarantee
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-sm-6">
+                        <div class="services__item">
+                            <div class="services__icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="services__info">
+                                <p class="services__name">
+                                    Online Support 24/7
+                                </p>
+                                <p class="services__desc">
+                                    Dedicated support
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-sm-6">
+                        <div class="services__item">
+                            <div class="services__icon">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div class="services__info">
+                                <p class="services__name">
+                                    Payment Secure
+                                </p>
+                                <p class="services__desc">
+                                    100% secure payment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="scroll-to-top">
+            <i class="fa-solid fa-up-long"></i>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer__about">
+                            <div class="footer__logo">
+                                <img src="./img/logo.svg" alt="">
+                            </div>
+                            <div class="footer__about-desc">
+                                Tempora aut ipsam corrupti temporibus enim incidunt praesentium, fuga animi quisquam qui
+                                unde nemo veritatis dolorem deserunt.
+                            </div>
+                            <div class="footer__about-payment">
+                                <a href="#">
+                                    <img src="./img/payments/payment-1.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/payments/payment-2.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/payments/payment-3.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/payments/payment-4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-3 col-sm-12">
+                        <div class="footer__widget">
+                            <h6>Quick Link</h6>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-3 col-sm-12">
+                        <div class="footer__widget">
+                            <h6>Account</h6>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Orders Tracking</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Favorite List</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-8 col-sm-12">
+                        <div class="footer__newsletter">
+                            <h6>NEWSLETTER</h6>
+                            <form action="#" class="footer__newsletter-form">
+                                <input type="text" placeholder="Email">
+                                <button type="submit">SUBSCRIBE</button>
+                            </form>
+                            <div class="footer__social">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-lg-12 col-md-12 col-sm-12">
+                        <div class="footer__copyright">
+                            Nedd Store - Copyright © 2023
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- modal register -->
+        <div class="register">
+            <div class="register__overlay"></div>
+            <div class="register__container">
+                <i class="register__close fa-solid fa-xmark"></i>
+                <h4 class="register__heading">Create your account</h4>
+                <p class="register__desc">Registration is easy.</p>
+                <form class="register__form">
+                    <div class="register__form-group">
+                        <label for="register-email">Email address <span>*</span></label>
+                        <input type="email" id="register-email">
+                    </div>
+                    <div class="register__form-group">
+                        <label for="register-name">First name <span>*</span></label>
+                        <input type="text" id="register-name">
+                    </div>
+                    <div class="register__form-group">
+                        <label for="register-password">Password <span>*</span></label>
+                        <input type="password" id="register-password">
+                    </div>
+                    <button class="register__form-submit" type="submit">Register</button>
+                </form>
+                <p class="register__separate"></p>
+                <div class="register__link">
+                    <ul class="register__link-list">
+                        <li class="register__link-item">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Continue with Google</span>
+                        </li>
+                        <li class="register__link-item">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Continue with Facebook</span>
+                        </li>
+                        <li class="register__link-item">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Continue with Apple</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="register__policy">
+                    By clicking Register or Continue with Google, Facebook, or Apple, you agree to Nedd Store's
+                    <span>Terms of
+                        Use</span> and <span>Privacy Policy</span>.
+                </div>
+            </div>
+        </div>
+        <!-- modal login -->
+        <div class="login">
+            <div class="login__overlay"></div>
+            <div class="login__container">
+                <i class="login__close fa-solid fa-xmark"></i>
+                <div class="login__header">
+                    <h4 class="login__heading">Sign In</h4>
+                    <p class="login__go-register register-btn">Register</p>
+                </div>
+                <form class="login__form">
+                    <div class="login__form-group">
+                        <label for="login-email">Email address</label>
+                        <input type="email" id="login-email">
+                    </div>
+                    <div class="login__form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password">
+                    </div>
+                    <button class="login__form-submit" type="submit">Login</button>
+                </form>
+                <p class="login__separate"></p>
+                <div class="login__link">
+                    <ul class="login__link-list">
+                        <li class="login__link-item">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Continue with Google</span>
+                        </li>
+                        <li class="login__link-item">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Continue with Facebook</span>
+                        </li>
+                        <li class="login__link-item">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Continue with Apple</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login__policy">
+                    By clicking Register or Continue with Google, Facebook, or Apple, you agree to Nedd Store's
+                    <span>Terms of
+                        Use</span> and <span>Privacy Policy</span>.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/javascript/script.js"></script>
+    <script type="module" src="/javascript/index.js"></script>
+</body>
+
+</html>

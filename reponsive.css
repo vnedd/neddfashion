@@ -1,0 +1,39 @@
+.hide-omb {
+    display: block;
+}
+.small-pic {
+    height: 250px;
+}
+@media (max-width: 739px) {
+    .hide-omb {
+        display: none;
+    }
+    .trend,
+    .services,
+    .banner__small,
+    .feature,
+    .product__page,
+    .product {
+        padding: 0 10px;
+    }
+    .feature__item {
+        width: 340px;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .small-pic {
+        height: 515px;
+    }
+    .large-order {
+        order: 1;
+    }
+    .feature__item {
+        width: 320px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .feature__item {
+        width: 320px;
+    }
+    
+}
