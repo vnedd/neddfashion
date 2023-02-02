@@ -2023,6 +2023,7 @@ img {
                 cursor: pointer;
                 font-weight: 500;
             }
+
             &-line {
                 position: absolute;
                 height: 3px;
@@ -2075,37 +2076,44 @@ img {
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid #ccc;
+
             &-rating {
                 font-size: 1.6rem;
                 margin-bottom: 15px;
             }
 
-           &-text {
+            &-text {
                 font-size: 1.8rem;
                 font-weight: 500;
                 margin: 10px 0;
                 line-height: 1.4;
                 @include twoLineClamp();
-           }
-           &-img {
-            width: 50%;
-            height: 100px;
-            margin-bottom: 20px;
-            overflow: hidden;
-            display: inline-block;
-            &-item {
-                margin-right: 10px;
-                border-radius: 10px;
+            }
+
+            &-img {
+                width: 50%;
+                height: 100px;
+                margin-bottom: 20px;
                 overflow: hidden;
+                display: inline-block;
+
+                &-item {
+                    margin-right: 10px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                img {
+                    width: 100px;
+                }
+
+                @include flex(center);
             }
-            img {
-                width: 100px;
-            }
-            @include flex(center);
-           }
+
             &-user {
                 @include flex(center);
                 margin-bottom: 20px;
+
                 &-img {
                     width: 40px;
                     height: 40px;
@@ -2121,6 +2129,7 @@ img {
                     margin-right: 10px;
                 }
             }
+
             &-helpful {
                 font-size: 1.5rem;
                 font-weight: 500;
@@ -2132,8 +2141,10 @@ img {
 }
 
 .similar {
+    margin-top: 50px;
     margin-bottom: 70px;
     position: relative;
+
     &__header {
         font-size: 2.4rem;
         text-transform: uppercase;
@@ -2141,22 +2152,26 @@ img {
         @include underLineBefore();
 
     }
+
     &__wrapper {
         max-width: 1200px;
         overflow-y: hidden;
         overflow-x: auto;
         scroll-behavior: smooth;
         scroll-snap-type: both;
+
         &::-webkit-scrollbar {
             display: none;
         }
     }
+
     &__list {
         width: max-content;
         @include flex(center);
         position: relative;
 
     }
+
     &__item {
         width: 282px;
         height: 400px;
@@ -2164,25 +2179,30 @@ img {
         background-color: #fff;
         cursor: pointer;
         scroll-snap-align: start;
+
         &-info {
             padding: 10px;
         }
+
         &-name {
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 1.3;
             @include twoLineClamp();
         }
+
         &-auth {
             font-size: 1.3rem;
             color: $text-gray-color;
             margin: 15px 0 10px 0;
         }
+
         &-price {
             font-size: 2rem;
             font-weight: 600;
         }
     }
+
     button {
         position: absolute;
         top: 40%;
@@ -2195,17 +2215,228 @@ img {
         border: 2px solid #fff;
         color: $text-white-color;
         cursor: pointer;
-        background: rgba(0,0,0, 0.4);
+        background: rgba(0, 0, 0, 0.4);
+
         &:hover {
             color: $text-white-color;
         }
     }
+
     &__direction {
         &-prev {
             left: 10%;
         }
+
         &-next {
             right: 10%;
+        }
+    }
+}
+
+
+/// favorite page
+/// 
+.favorite {
+    &__header {
+        margin: 20px 0 50px 0;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 1.6rem;
+            font-style: italic;
+        }
+    }
+
+    &__item {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+
+    &__icon-cart,
+    &__icon-favo {
+        text-align: center;
+        line-height: 30px;
+        color: $text-white-color;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: all .2s;
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        position: absolute;
+        background-color: #000;
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__icon-favo {
+        top: 10px;
+    }
+    &__icon-cart {
+        top: 46px;
+    }
+
+    &__details {
+        padding: 10px;
+
+        &-title {
+            font-size: 1.8rem;
+            @include twoLineClamp();
+            line-height: 1.3;
+            height: 42px;
+        }
+
+        &-auth {
+            font-size: 1.4rem;
+            color: $text-gray-color;
+            margin: 10px 0;
+        }
+    }
+
+}
+
+// cart page
+.cart {
+    &__header {
+        margin: 20px 0 50px 0;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+    &__item {
+        height: 130px;
+        padding: 15px 0;
+        border-bottom: 1px solid $text-gray-color;
+        &:nth-child(1) {
+            border-top: 1px solid $text-gray-color;
+        }
+        @include flex(center);
+        &-img {
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        &-details {
+            flex-grow: 1;
+            flex-shrink: 0;
+            &-name {
+                font-size: 1.8rem;
+                font-weight: 500;
+                @include twoLineClamp();
+            }
+            &-style {
+                font-size: 1.5rem;
+                &-color {
+                    margin: 15px 0;
+                    span {
+                        margin-left: 5px;
+                        font-weight: 500;
+                    }
+                }
+                &-size {
+                    span {
+                        font-weight: 500;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        &-quantity {
+            width: 120px;
+            height: 40px;
+            @include flex(center);
+            text-align: center;
+            font-size: 2rem;
+            margin-right: 50px;
+            user-select: none;
+            span {
+                width: 30px;
+                cursor: pointer;
+            }
+            input {
+                font-size: 2rem;
+                width: 60px;
+                height: 100%;
+                border-radius: 5px;
+                outline: none;
+
+                text-align: center;
+            }
+        }
+        &-price {
+            width: 100px;
+            flex-shrink: 0;
+            text-align: left;
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin-right: 80px;
+        }
+        &-delete {
+            font-size: 3rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f8f8f8;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            transition: .2s;
+            flex-shrink: 0;
+            &:hover {
+                background-color: $text-color;
+                color: $text-white-color;
+            }
+        }
+    }
+    &__total {
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 15px;
+        &-coupon {
+            position: relative;
+            @include flex(center);
+            height: 36px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid $text-gray-color;
+            input {
+                width: 100%;
+                height: 100%;
+                padding-right: 40px;
+                padding-left: 10px;
+                outline: none;
+                border: none;
+                font-size: 1.4rem;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                width: 60px;
+                height: 100%;
+                border: none;
+                outline: none;
+                background-color: $text-color;
+                color: $text-white-color;
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
         }
     }
 }

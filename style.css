@@ -2000,6 +2000,7 @@ img {
 }
 
 .similar {
+  margin-top: 50px;
   margin-bottom: 70px;
   position: relative;
 }
@@ -2089,6 +2090,212 @@ img {
 }
 .similar__direction-next {
   right: 10%;
+}
+
+.favorite__header {
+  margin: 20px 0 50px 0;
+}
+.favorite__header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.favorite__header p {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+.favorite__item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.favorite__icon-cart, .favorite__icon-favo {
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  position: absolute;
+  background-color: #000;
+  transition: all 0.2s;
+}
+.favorite__icon-cart:hover, .favorite__icon-favo:hover {
+  transform: scale(1.2);
+}
+.favorite__icon-favo {
+  top: 10px;
+}
+.favorite__icon-cart {
+  top: 46px;
+}
+.favorite__details {
+  padding: 10px;
+}
+.favorite__details-title {
+  font-size: 1.8rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+  height: 42px;
+}
+.favorite__details-auth {
+  font-size: 1.4rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.cart__header {
+  margin: 20px 0 50px 0;
+}
+.cart__header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.cart__item {
+  height: 130px;
+  padding: 15px 0;
+  border-bottom: 1px solid #666;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.cart__item:nth-child(1) {
+  border-top: 1px solid #666;
+}
+.cart__item-img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.cart__item-details {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.cart__item-details-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.cart__item-details-style {
+  font-size: 1.5rem;
+}
+.cart__item-details-style-color {
+  margin: 15px 0;
+}
+.cart__item-details-style-color span {
+  margin-left: 5px;
+  font-weight: 500;
+}
+.cart__item-details-style-size span {
+  font-weight: 500;
+  margin-left: 5px;
+}
+.cart__item-quantity {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 50px;
+  user-select: none;
+}
+.cart__item-quantity span {
+  width: 30px;
+  cursor: pointer;
+}
+.cart__item-quantity input {
+  font-size: 2rem;
+  width: 60px;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+.cart__item-price {
+  width: 100px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-right: 80px;
+}
+.cart__item-delete {
+  font-size: 3rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+  flex-shrink: 0;
+}
+.cart__item-delete:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+.cart__total {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+}
+.cart__total-coupon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 36px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #666;
+}
+.cart__total-coupon input {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+}
+.cart__total-coupon button {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
