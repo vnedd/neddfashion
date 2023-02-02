@@ -8,7 +8,7 @@ const products = [
       description:
         "Fairtrade and beautifully handmade by Native Kichwas Artisan. Anyone can enjoy this Jacket Young, Adult, Old or going to be Mama. This super cozy and warm jacket will be the great addition to your wardrobe and may be exactly what you are looking for.",
       category: "men's clothing",
-      image: "./img/products/men/men_1.jpg",
+      image: "img/products/men/men_1.jpg",
       rating: {
         rate: 3.9,
         count: 120,
@@ -23,7 +23,7 @@ const products = [
       description:
         "This woolen jacket has two front pockets and an inner breast pocket on one side. It is the hooded jacket and has the full front zip fastening",
       category: "men's clothing",
-      image: "./img/products/men/men_2.jpg",
+      image: "img/products/men/men_2.jpg",
       rating: {
         rate: 4.5,
         count: 253,
@@ -38,7 +38,7 @@ const products = [
       description:
         "This Scandia Canvas Anorak was designed to be an outer shell. It is also a great a stand alone Anorak to be used to block wind and snow.",
       category: "men's clothing",
-      image: "./img/products/men/men_3.jpg",
+      image: "img/products/men/men_3.jpg",
       rating: {
         rate: 4.2,
         count: 253,
@@ -54,7 +54,7 @@ const products = [
       description:
         "Channel your inner Logan in this jacket. Made with genuine leather. Adult sizing.",
       category: "men's clothing",
-      image: "./img/products/men/men_4.jpg",
+      image: "img/products/men/men_4.jpg",
       rating: {
         rate: 4.6,
         count: 5621,
@@ -70,7 +70,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "men's clothing",
-      image: "./img/products/men/men_5.jpg",
+      image: "img/products/men/men_5.jpg",
       rating: {
         rate: 4.1,
         count: 136,
@@ -85,7 +85,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "men's clothing",
-      image: "./img/products/men/men_6.jpg",
+      image: "img/products/men/men_6.jpg",
       rating: {
         rate: 4.1,
         count: 2344,
@@ -99,7 +99,7 @@ const products = [
       panel:'women',
       description: "Women Summer Cotton dresses Nine-point Sleeves dress long",
       category: "women's clothing",
-      image: "./img/products/women/women_1.jpg",
+      image: "img/products/women/women_1.jpg",
       rating: {
         rate: 4.2,
         count: 7345,
@@ -115,7 +115,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_2.jpg",
+      image: "img/products/women/women_2.jpg",
       rating: {
         rate: 4.2,
         count: 7345,
@@ -130,7 +130,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_3.jpg",
+      image: "img/products/women/women_3.jpg",
       rating: {
         rate: 4.2,
         count: 122,
@@ -146,7 +146,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_4.jpg",
+      image: "img/products/women/women_4.jpg",
       rating: {
         rate: 4.2,
         count: 521,
@@ -161,7 +161,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_5.jpg",
+      image: "img/products/women/women_5.jpg",
       rating: {
         rate: 4.2,
         count: 245,
@@ -177,7 +177,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_6.jpg",
+      image: "img/products/women/women_6.jpg",
       rating: {
         rate: 4.2,
         count: 427,
@@ -193,7 +193,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_7.jpg",
+      image: "img/products/women/women_7.jpg",
       rating: {
         rate: 4.2,
         count: 3642,
@@ -209,7 +209,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_8.jpg",
+      image: "img/products/women/women_8.jpg",
       rating: {
         rate: 4.2,
         count: 2341,
@@ -225,7 +225,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_9.jpg",
+      image: "img/products/women/women_9.jpg",
       rating: {
         rate: 4.2,
         count: 8345,
@@ -241,7 +241,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_10.jpg",
+      image: "img/products/women/women_10.jpg",
       rating: {
         rate: 4.2,
         count: 4124,
@@ -258,7 +258,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_11.jpg",
+      image: "img/products/women/women_11.jpg",
       rating: {
         rate: 4.2,
         count: 3745,
@@ -273,7 +273,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "women's clothing",
-      image: "./img/products/women/women_12.jpg",
+      image: "img/products/women/women_12.jpg",
       rating: {
         rate: 4.2,
         count: 4124,
@@ -288,7 +288,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_1.jpg",
+      image: "img/products/kid/kid_1.jpg",
       rating: {
         rate: 4.2,
         count: 461,
@@ -303,7 +303,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_2.jpg",
+      image: "img/products/kid/kid_2.jpg",
       rating: {
         rate: 4.2,
         count: 1445,
@@ -318,7 +318,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_3.jpg",
+      image: "img/products/kid/kid_3.jpg",
       rating: {
         rate: 4.2,
         count: 1467,
@@ -333,7 +333,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_4.jpg",
+      image: "img/products/kid/kid_4.jpg",
       rating: {
         rate: 4.9,
         count: 8292,
@@ -348,7 +348,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_5.jpg",
+      image: "img/products/kid/kid_5.jpg",
       rating: {
         rate: 4.9,
         count: 2721,
@@ -363,7 +363,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_6.jpg",
+      image: "img/products/kid/kid_6.jpg",
       rating: {
         rate: 4.9,
         count: 2721,
@@ -378,7 +378,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_7.jpg",
+      image: "img/products/kid/kid_7.jpg",
       rating: {
         rate: 4.9,
         count: 853,
@@ -393,7 +393,7 @@ const products = [
       description:
         "The Perfect Leather Jacket – experience the ultimate in fit, comfort and style. Hand cut and sewn to your measurements to ensure a perfect fit",
       category: "kid's clothing",
-      image: "./img/products/kid/kid_8.jpg",
+      image: "img/products/kid/kid_8.jpg",
       rating: {
         rate: 4.9,
         count: 145,
@@ -408,7 +408,7 @@ const products = [
       description:
         "With your luscious window sills and perfect lighting to raise a plethora of plant babies. These are no (dad) joke",
       category: "accessories",
-      image: "./img/products/accessories/accessories_1.jpg",
+      image: "img/products/accessories/accessories_1.jpg",
       rating: {
         rate: 4.9,
         count: 712,
@@ -423,7 +423,7 @@ const products = [
       description:
         "With your luscious window sills and perfect lighting to raise a plethora of plant babies. These are no (dad) joke",
       category: "accessories",
-      image: "./img/products/accessories/accessories_2.jpg",
+      image: "img/products/accessories/accessories_2.jpg",
       rating: {
         rate: 4.9,
         count: 712,
@@ -438,7 +438,7 @@ const products = [
       description:
         "With your luscious window sills and perfect lighting to raise a plethora of plant babies. These are no (dad) joke",
       category: "accessories",
-      image: "./img/products/accessories/accessories_3.jpg",
+      image: "img/products/accessories/accessories_3.jpg",
       rating: {
         rate: 4.9,
         count: 712,
@@ -453,7 +453,7 @@ const products = [
       description:
         "With your luscious window sills and perfect lighting to raise a plethora of plant babies. These are no (dad) joke",
       category: "accessories",
-      image: "./img/products/accessories/accessories_4.jpg",
+      image: "img/products/accessories/accessories_4.jpg",
       rating: {
         rate: 4.9,
         count: 712,
@@ -468,7 +468,7 @@ const products = [
       description:
         "With your luscious window sills and perfect lighting to raise a plethora of plant babies. These are no (dad) joke",
       category: "accessories",
-      image: "./img/products/accessories/accessories_5.jpg",
+      image: "img/products/accessories/accessories_5.jpg",
       rating: {
         rate: 4.9,
         count: 712,
