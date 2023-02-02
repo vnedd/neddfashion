@@ -2161,6 +2161,9 @@ img {
   font-size: 2.5rem;
   font-weight: 500;
 }
+.cart__list {
+  padding-right: 20px;
+}
 .cart__item {
   height: 130px;
   padding: 15px 0;
@@ -2262,7 +2265,7 @@ img {
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 15px;
+  padding: 20px;
 }
 .cart__total-coupon {
   position: relative;
@@ -2295,6 +2298,91 @@ img {
   background-color: #111111;
   color: #ffffff;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+.cart__total-product {
+  margin-top: 20px;
+  border-bottom: 1px solid #666;
+}
+.cart__total-product-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cart__total-product-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.cart__total-product-item-name {
+  width: 70%;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.cart__total-product-item-quantity {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.cart__total-product-item-price {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.cart__total-subtotal, .cart__total-shipping {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.cart__total-subtotal-name, .cart__total-shipping-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.cart__total-subtotal-price, .cart__total-shipping-price {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.cart__total-shipping {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #666;
+}
+.cart__total-total {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.cart__total-total-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.cart__total-total-price {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.cart__total-btn button {
+  width: 100%;
+  margin: 10px 0;
+  height: 40px;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #ffffff;
+  border-radius: 15px;
   cursor: pointer;
 }
 

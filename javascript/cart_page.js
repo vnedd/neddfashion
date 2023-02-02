@@ -5,6 +5,9 @@ const decreaseQuantityBtns = document.querySelectorAll(
   ".cart__item-quantity-decrease"
 );
 const inputQuantitis = document.querySelectorAll(".cart__item-quantity-input");
+const cartTotalList = document.querySelectorAll(".cart__total-product-item");
+console.log(cartTotalList);
+
 
 function getParrentElement(element, selector) {
   while (element.parentElement) {
@@ -25,7 +28,7 @@ inputQuantitis.forEach((item) => {
   });
 });
 
-increaseQuantityBtns.forEach((item) => {
+increaseQuantityBtns.forEach((item, index) => {
   item.addEventListener("click", (e) => {
     let parentElement = getParrentElement(item, ".cart__item");
     const price = parentElement.querySelector(".cart__item-price span").dataset
@@ -38,10 +41,14 @@ increaseQuantityBtns.forEach((item) => {
     quantityInput.value = quantity;
     let total = price * quantity;
     parentElement.querySelector(".cart__item-price span").innerText = total;
-    console.log(total);
+    cartTotalList[index].querySelector('.cart__total-product-item-price span').innerText = total;
+    cartTotalList[index].querySelector('.cart__total-product-item-quantity span').innerText = quantity;
+    caculatorSubtotal();
+    caculatorTotal();
   });
 });
-decreaseQuantityBtns.forEach((item) => {
+
+decreaseQuantityBtns.forEach((item, index) => {
   item.addEventListener("click", (e) => {
     let parentElement = getParrentElement(item, ".cart__item");
     let quantityInput = parentElement.querySelector(
@@ -55,6 +62,10 @@ decreaseQuantityBtns.forEach((item) => {
       quantityInput.value = quantity;
       let total = price * quantity;
       parentElement.querySelector(".cart__item-price span").innerText = total;
+      cartTotalList[index].querySelector('.cart__total-product-item-price span').innerText = total;
+      cartTotalList[index].querySelector('.cart__total-product-item-quantity span').innerText = quantity;
+      caculatorSubtotal();
+      caculatorTotal();
     }
   });
 });
@@ -77,3 +88,21 @@ inputQuantitis.forEach((item) => {
     }
   });
 });
+
+function caculatorSubtotal() {
+    let total = 0;
+    cartTotalList.forEach((item, index) => {
+        let totalItem = item.querySelector(".cart__total-product-item-price span").innerText;
+        total += parseFloat(totalItem);
+        document.querySelector(".cart__total-subtotal-price span").innerText = total;
+    })
+}
+caculatorSubtotal();
+function caculatorTotal() {
+    let total = 0;
+    let subtotal = document.querySelector(".cart__total-subtotal-price span").innerText;
+    let shippingTotal = document.querySelector(".cart__total-shipping-price span").innerText;
+    total = parseFloat(subtotal) + parseFloat(shippingTotal);
+    document.querySelector(".cart__total-total-price span").innerText = total;
+}
+caculatorTotal();
