@@ -8,7 +8,7 @@ const productImgWrapper = document.querySelectorAll('.product-page__img-item');
 let currentIndexImg = 0;
 
 function renderThumbnailImg(currentIndexImg) {
-    imgThumbnail.src = `/img/products/single__page/${currentIndexImg}.jpg`
+    imgThumbnail.src = `img/products/single__page/${currentIndexImg}.jpg`
     productImgWrapper.forEach(img => img.classList.remove('active'));
     productImgWrapper[currentIndexImg].classList.add('active');
 }
