@@ -2087,7 +2087,22 @@ img {
                 line-height: 1.4;
                 @include twoLineClamp();
            }
-
+           &-img {
+            width: 50%;
+            height: 100px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: inline-block;
+            &-item {
+                margin-right: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            img {
+                width: 100px;
+            }
+            @include flex(center);
+           }
             &-user {
                 @include flex(center);
                 margin-bottom: 20px;
@@ -2112,6 +2127,85 @@ img {
                 cursor: pointer;
                 text-align: left;
             }
+        }
+    }
+}
+
+.similar {
+    margin-bottom: 70px;
+    position: relative;
+    &__header {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        @include underLineBefore();
+
+    }
+    &__wrapper {
+        max-width: 1200px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: both;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__list {
+        width: max-content;
+        @include flex(center);
+        position: relative;
+
+    }
+    &__item {
+        width: 282px;
+        height: 400px;
+        margin-right: 24px;
+        background-color: #fff;
+        cursor: pointer;
+        scroll-snap-align: start;
+        &-info {
+            padding: 10px;
+        }
+        &-name {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.3;
+            @include twoLineClamp();
+        }
+        &-auth {
+            font-size: 1.3rem;
+            color: $text-gray-color;
+            margin: 15px 0 10px 0;
+        }
+        &-price {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    button {
+        position: absolute;
+        top: 40%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        outline: none;
+        background: transparent;
+        font-size: 2.5rem;
+        border: 2px solid #fff;
+        color: $text-white-color;
+        cursor: pointer;
+        background: rgba(0,0,0, 0.4);
+        &:hover {
+            color: $text-white-color;
+        }
+    }
+    &__direction {
+        &-prev {
+            left: 10%;
+        }
+        &-next {
+            right: 10%;
         }
     }
 }

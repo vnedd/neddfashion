@@ -13,11 +13,15 @@
     .banner__small,
     .feature,
     .product__page,
+    .similar,
     .product {
         padding: 0 10px;
     }
     .feature__item {
         width: 340px;
+    }
+    .similar__item {
+        width: 300px;
     }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -30,10 +34,18 @@
     .feature__item {
         width: 320px;
     }
+
+    .similar__item {
+        width: 310px;
+    }
+
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
     .feature__item {
         width: 320px;
+    }
+    .similar__item {
+        width: 312px;
     }
     
 }
