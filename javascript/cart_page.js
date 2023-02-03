@@ -1,15 +1,20 @@
-const increaseQuantityBtns = document.querySelectorAll(
+const inscreaseQuantityBtns = document.querySelectorAll(
   ".cart__item-quantity-increase"
 );
 const decreaseQuantityBtns = document.querySelectorAll(
   ".cart__item-quantity-decrease"
 );
-const inputQuantitis = document.querySelectorAll(".cart__item-quantity-input");
+const quantityInputs = document.querySelectorAll(".cart__item-quantity-input");
+
+const cartItems = document.querySelectorAll(".cart__item");
+
 const cartTotalList = document.querySelectorAll(".cart__total-product-item");
-console.log(cartTotalList);
 
+const shippingOptions = document.querySelectorAll(".cart__total-shipping-item");
+const inputShippingOptions = document.querySelectorAll(".cart__total-shipping-item input");
+// function get parrent element
 
-function getParrentElement(element, selector) {
+function getParentElement(element, selector) {
   while (element.parentElement) {
     if (element.parentElement.matches(selector)) {
       return element.parentElement;
@@ -18,91 +23,123 @@ function getParrentElement(element, selector) {
   }
 }
 
-inputQuantitis.forEach((item) => {
-  item.addEventListener("change", (e) => {
-    let regexDigit = /^\d+$/;
-    let value = e.target.value;
-    if (regexDigit.test(value)) {
-      item.value = value;
-    } else item.value = 1;
-  });
-});
+// increase quantity
 
-increaseQuantityBtns.forEach((item, index) => {
-  item.addEventListener("click", (e) => {
-    let parentElement = getParrentElement(item, ".cart__item");
-    const price = parentElement.querySelector(".cart__item-price span").dataset
-      .set;
-    let quantityInput = parentElement.querySelector(
-      ".cart__item-quantity-input"
-    );
-    let quantity = quantityInput.value;
-    quantity++;
-    quantityInput.value = quantity;
-    let total = price * quantity;
-    parentElement.querySelector(".cart__item-price span").innerText = total;
-    cartTotalList[index].querySelector('.cart__total-product-item-price span').innerText = total;
-    cartTotalList[index].querySelector('.cart__total-product-item-quantity span').innerText = quantity;
-    caculatorSubtotal();
+inscreaseQuantityBtns.forEach((btn, index) => {
+  btn.addEventListener("click", (e) => {
+    const parentElm = getParentElement(e.target, ".cart__item");
+    const quantityInput = parentElm.querySelector(".cart__item-quantity-input");
+    let value = parseInt(quantityInput.value);
+    value++;
+    quantityInput.value = value;
+    const price = parentElm.querySelector(".cart__item-price span").dataset.set;
+    let total = value * price;
+    parentElm.querySelector(".cart__item-price span").innerText = total;
+
+    cartTotalList[index].querySelector(
+      ".cart__total-product-item-quantity span"
+    ).innerText = value;
+    cartTotalList[index].querySelector(
+      ".cart__total-product-item-price span"
+    ).innerText = total;
+    caculatorSubTotal();
     caculatorTotal();
   });
 });
 
-decreaseQuantityBtns.forEach((item, index) => {
-  item.addEventListener("click", (e) => {
-    let parentElement = getParrentElement(item, ".cart__item");
-    let quantityInput = parentElement.querySelector(
-      ".cart__item-quantity-input"
-    );
-    const price = parentElement.querySelector(".cart__item-price span").dataset
-      .set;
-    let quantity = quantityInput.value;
-    if (quantity > 1) {
-      quantity--;
-      quantityInput.value = quantity;
-      let total = price * quantity;
-      parentElement.querySelector(".cart__item-price span").innerText = total;
-      cartTotalList[index].querySelector('.cart__total-product-item-price span').innerText = total;
-      cartTotalList[index].querySelector('.cart__total-product-item-quantity span').innerText = quantity;
-      caculatorSubtotal();
+// decrease quantity
+decreaseQuantityBtns.forEach((btn, index) => {
+  btn.addEventListener("click", (e) => {
+    const parentElm = getParentElement(e.target, ".cart__item");
+    const quantityInput = parentElm.querySelector(".cart__item-quantity-input");
+    let value = parseInt(quantityInput.value);
+    if (value > 1) {
+      value--;
+      quantityInput.value = value;
+      const price = parentElm.querySelector(".cart__item-price span").dataset
+        .set;
+      let total = value * price;
+      parentElm.querySelector(".cart__item-price span").innerText = total;
+      cartTotalList[index].querySelector(
+        ".cart__total-product-item-quantity span"
+      ).innerText = value;
+      cartTotalList[index].querySelector(
+        ".cart__total-product-item-price span"
+      ).innerText = total;
+      caculatorSubTotal();
       caculatorTotal();
     }
   });
 });
 
-inputQuantitis.forEach((item) => {
-  item.addEventListener("input", (e) => {
-    let total = 0;
-    let parentElement = getParrentElement(item, ".cart__item");
-    let quantityInput = parentElement.querySelector(
-      ".cart__item-quantity-input"
-    );
-    let quantity = quantityInput.value;
-    let price = parentElement.querySelector(".cart__item-price span").dataset
-      .set;
-    if (isNaN(quantity)) {
-      parentElement.querySelector(".cart__item-price span").innerText = price;
-    } else {
-      total += quantity * parseFloat(price);
-      parentElement.querySelector(".cart__item-price span").innerText = total;
-    }
-  });
-});
+// valid quntity input
 
-function caculatorSubtotal() {
-    let total = 0;
-    cartTotalList.forEach((item, index) => {
-        let totalItem = item.querySelector(".cart__total-product-item-price span").innerText;
-        total += parseFloat(totalItem);
-        document.querySelector(".cart__total-subtotal-price span").innerText = total;
-    })
+function checkQuantityInput() {
+  quantityInputs.forEach((input, index) => {
+    input.addEventListener("input", (e) => {
+      let parentElm = getParentElement(e.target, ".cart__item");
+      let value = e.target.value;
+      if (isNaN(value) || value < 1) {
+        value = 1;
+      } else {
+        value = value;
+      }
+      e.target.value = value;
+      const price = parentElm.querySelector(".cart__item-price span").dataset
+        .set;
+      let total = value * price;
+      parentElm.querySelector(".cart__item-price span").innerText = total;
+      cartTotalList[index].querySelector(
+        ".cart__total-product-item-quantity span"
+      ).innerText = value;
+      cartTotalList[index].querySelector(
+        ".cart__total-product-item-price span"
+      ).innerText = total;
+      caculatorSubTotal();
+      caculatorTotal();
+    });
+  });
 }
-caculatorSubtotal();
+checkQuantityInput();
+// cauclator subtotal
+
+function caculatorSubTotal() {
+  let total = Array.from(cartTotalList).reduce((acc, item) => {
+    let price = item.querySelector(
+      ".cart__total-product-item-price span"
+    ).innerText;
+    return acc + parseInt(price);
+  }, 0);
+  document.querySelector(".cart__total-subtotal-price span").innerText = total;
+}
+
+caculatorSubTotal();
+
+// render total;
 function caculatorTotal() {
-    let total = 0;
-    let subtotal = document.querySelector(".cart__total-subtotal-price span").innerText;
-    let shippingTotal = document.querySelector(".cart__total-shipping-price span").innerText;
-    total = parseFloat(subtotal) + parseFloat(shippingTotal);
-    document.querySelector(".cart__total-total-price span").innerText = total;
+  let subtotal = document.querySelector(".cart__total-subtotal-price span").innerText;
+  let shippingPrice = 0;
+  inputShippingOptions.forEach((item) => {
+    if(item.checked) {
+      shippingPrice = item.value;
+    }
+  })
+  document.querySelector('.cart__total-total-price span').innerHTML = Number(shippingPrice) + parseInt(subtotal);
 }
+
+inputShippingOptions.forEach((item) => {
+  item.onchange = () => {
+    caculatorTotal();
+  }
+})
 caculatorTotal();
+
+
+function renderPriceShipping() {
+  shippingOptions.forEach((item) => {
+    let shippingPrice = item.querySelector("input").value;
+    item.querySelector(".cart__total-shipping-price span").innerText =
+      shippingPrice;
+  });
+}
+renderPriceShipping();

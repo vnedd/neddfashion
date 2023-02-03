@@ -2163,6 +2163,7 @@ img {
 }
 .cart__list {
   padding-right: 20px;
+  margin-bottom: 30px;
 }
 .cart__item {
   height: 130px;
@@ -2178,7 +2179,7 @@ img {
   border-top: 1px solid #666;
 }
 .cart__item-img {
-  flex-shrink: 0;
+  flex: 1;
   width: 100px;
   height: 100px;
   border-radius: 5px;
@@ -2186,8 +2187,7 @@ img {
   margin-right: 20px;
 }
 .cart__item-details {
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 2;
 }
 .cart__item-details-name {
   font-size: 1.8rem;
@@ -2213,7 +2213,8 @@ img {
   margin-left: 5px;
 }
 .cart__item-quantity {
-  width: 120px;
+  flex: 1;
+  width: 100px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -2238,8 +2239,8 @@ img {
   text-align: center;
 }
 .cart__item-price {
+  flex: 1;
   width: 100px;
-  flex-shrink: 0;
   text-align: left;
   font-size: 2.4rem;
   font-weight: 500;
@@ -2337,7 +2338,7 @@ img {
   font-weight: 600;
   font-size: 1.5rem;
 }
-.cart__total-subtotal, .cart__total-shipping {
+.cart__total-subtotal {
   margin: 15px 0;
   display: flex;
   align-items: center;
@@ -2345,17 +2346,45 @@ img {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.cart__total-subtotal-name, .cart__total-shipping-name {
+.cart__total-subtotal-name {
   font-size: 1.4rem;
   font-weight: 500;
 }
-.cart__total-subtotal-price, .cart__total-shipping-price {
+.cart__total-subtotal-price {
   font-weight: 600;
   font-size: 1.5rem;
 }
 .cart__total-shipping {
   padding-bottom: 15px;
   border-bottom: 1px solid #666;
+  margin: 15px 0;
+}
+.cart__total-shipping-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.cart__total-shipping-item input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.cart__total-shipping-item label {
+  flex-grow: 1;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.4rem;
+}
+.cart__total-shipping-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.cart__total-shipping-price {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .cart__total-total {
   margin: 15px 0;
