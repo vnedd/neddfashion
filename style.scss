@@ -903,12 +903,18 @@ img {
             border-radius: 50%;
             background-color: rgba(45, 45, 45, 0.3);
             transition: all .3s;
-
+            &.active {
+                background-color: green;
+            }
             &:hover {
-                background-color: rgba(0, 0, 0);
                 transform: rotate(360deg);
             }
         }
+        &-favorite {
+            &.active {
+                background-color: red;
+            }
+        } 
 
     }
 }

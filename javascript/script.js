@@ -1,5 +1,5 @@
-import cart from "./cart.js";
-import favorites from "./favorites.js";
+import products from './products.js'
+
 //header search
 
 const searchBox = document.querySelector(".header__search-box");
@@ -88,13 +88,12 @@ window.addEventListener("scroll", (e) => {
 //render card count
 
 function renderCartCount() {
-  const cartCountElm = document.querySelector(".header__services-cart-quantity");
-  let cartCount = getcartCount();
-  cartCountElm.innerHTML = cartCount;
-}
-
-function getcartCount() {
-  return cart.length.toString();
+  if (localStorage.getItem("carts") == null) {
+    localStorage.setItem("carts", "[]");
+  }
+  let cartStorages = JSON.parse(localStorage.getItem("carts"));
+  document.querySelector(".header__services-cart-quantity").innerHTML =
+    cartStorages.length;
 }
 renderCartCount();
 
@@ -108,6 +107,7 @@ function renderFavoriteCount() {
 }
 
 function getFavoriteCount() {
-  return favorites.length.toString();
+  let inFavorite = products.filter(item => item.inCart === true);
+  return inFavorite.length.toString();
 }
 renderFavoriteCount();
