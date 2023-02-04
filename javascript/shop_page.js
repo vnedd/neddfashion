@@ -39,7 +39,7 @@ function renderProduct() {
                     <div class="product__services-favorite">
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div class="product__services-add-cart">
+                    <div class="product__services-add-cart add-cart-btn">
                         <i class="fa-solid fa-cart-plus"></i>
                     </div>
                 </div>

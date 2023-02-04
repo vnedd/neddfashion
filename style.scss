@@ -296,47 +296,42 @@ img {
 
         i {
             font-size: 2rem;
-            color: $text-color;
             margin-right: 18px;
-            opacity: .8;
             cursor: pointer;
         }
 
         &-favorite {
             position: relative;
-
-            &::after {
+            color: $text-color;
+            &-quantity {
                 position: absolute;
-                content: '2';
-                font-size: 1rem;
-                width: 17px;
-                height: 17px;
-                background-color: $text-color;
-                border-radius: 50%;
-                color: $text-white-color;
+                width: 20px;
+                height: 20px;
                 text-align: center;
-                line-height: 17px;
-                top: -14px;
-                right: -10px;
+                line-height: 20px;
+                background-color: $text-color;
+                color: $text-white-color;
+                border-radius: 50%;
+                top: 12px;
+                right: 10px;
             }
+            
         }
 
         &-cart {
+            color: $text-color;
             position: relative;
-
-            &::after {
+            &-quantity {
                 position: absolute;
-                content: '5';
-                font-size: 1rem;
-                width: 18px;
-                height: 18px;
-                background-color: $text-color;
-                border-radius: 50%;
-                color: $text-white-color;
+                width: 20px;
+                height: 20px;
                 text-align: center;
-                line-height: 18px;
-                top: -14px;
-                right: -10px;
+                line-height: 20px;
+                background-color: $text-color;
+                color: $text-white-color;
+                border-radius: 50%;
+                top: 12px;
+                right: 10px;
             }
         }
     }

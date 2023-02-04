@@ -1,8 +1,5 @@
 import products from "./products.js";
-
-
-
-
+import cart from "./cart.js";
 //banner slider home page
 
 const prevBannerBtn = document.querySelector(".banner__large-direction-prev");
@@ -42,29 +39,32 @@ nextBannerBtn.addEventListener("click", () => {
 
 const productWrapper = document.querySelector(".product__wrapper");
 
-
 function renderProducts(options) {
-
-  options.forEach((item,index) => {
+  options.forEach((item, index) => {
     if (index > 12) return;
     let productElm = document.createElement("div");
-        productElm.setAttribute('class', 'col col-lg-3 col-md-4 col-sm-6');
-        //discount, new, out-stock tag
-        let randomDiscount = Math.floor(Math.random() *51);
-        let textStatus = item.status === 'discount' ?  `Discount ${randomDiscount}%` : item.status === 'new' ? 'new' : 'out of stock';
+    productElm.setAttribute("class", "col col-lg-3 col-md-4 col-sm-6");
+    //discount, new, out-stock tag
+    let randomDiscount = Math.floor(Math.random() * 51);
+    let textStatus =
+      item.status === "discount"
+        ? `Discount ${randomDiscount}%`
+        : item.status === "new"
+        ? "new"
+        : "out of stock";
 
-        // make count star product
-        let ratingStars = Math.floor(item.rating.rate);
-        let starElm = '';
-        for(let i = 0; i < ratingStars; i++) {
-          starElm += `<i class="product__rating-star fa-solid fa-star"></i>`
-        }
-        for(let i = 0; i < 5 - ratingStars; i++) {
-          starElm +=  `<i class="product__rating-star fa-regular fa-star"></i>`
-        }
+    // make count star product
+    let ratingStars = Math.floor(item.rating.rate);
+    let starElm = "";
+    for (let i = 0; i < ratingStars; i++) {
+      starElm += `<i class="product__rating-star fa-solid fa-star"></i>`;
+    }
+    for (let i = 0; i < 5 - ratingStars; i++) {
+      starElm += `<i class="product__rating-star fa-regular fa-star"></i>`;
+    }
 
-        productElm.innerHTML = `
-            <a href="product_page.html" class="product__item">
+    productElm.innerHTML = `
+            <div href="product_page.html" class="product__item" data-set="${item.id}">
                 <p class="product__status product__status-${item.status}">
                 <span>
                     ${textStatus} 
@@ -73,7 +73,7 @@ function renderProducts(options) {
                 <div class="product__img">
                     <img src="${item.image}" alt="${item.title}">
                 </div>
-                <div class="product__details">
+                <a class="product__details">
                     <p class="product__name">${item.title}</p>
                     <div class="product__rating">
                         ${starElm}
@@ -84,40 +84,41 @@ function renderProducts(options) {
                         <span class="product__price-cur">$<span>${item.price}</span></span>
                     </p>
                     <p class="product__author">By Nedd store</p>
-                </div>
+                </a>
                 <div class="product__services">
                     <div class="product__services-favorite">
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div class="product__services-add-cart">
+                    <div class="product__services-add-cart add-cart-btn">
                         <i class="fa-solid fa-cart-plus"></i>
                     </div>
                 </div>
-            </a>
-        `
-        productWrapper.appendChild(productElm);
-  })
+            </div>
+        `;
+    productWrapper.appendChild(productElm);
+  });
 }
 
 renderProducts(products);
 
-const productPanels = document.querySelectorAll('.product__panel');
+const productPanels = document.querySelectorAll(".product__panel");
 
-productPanels.forEach(panel => {
-  panel.addEventListener('click', () => {
-    productPanels.forEach(panel => panel.classList.remove('active'));
-    panel.classList.add('active')
-    productWrapper.innerHTML = '';
+productPanels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    productPanels.forEach((panel) => panel.classList.remove("active"));
+    panel.classList.add("active");
+    productWrapper.innerHTML = "";
     let dataPanel = panel.dataset.set;
-    if(dataPanel === 'all') {
+    if (dataPanel === "all") {
       renderProducts(products);
     } else {
-      const filterProductByPanel = products.filter(item => item.panel === dataPanel)
+      const filterProductByPanel = products.filter(
+        (item) => item.panel === dataPanel
+      );
       renderProducts(filterProductByPanel);
     }
-  })
-})
-
+  });
+});
 
 ///// feature item slide
 const featurePrevbtn = document.querySelector(".feature__direction-prev");
@@ -132,4 +133,31 @@ featureNextbtn.addEventListener("click", () => {
   document
     .querySelector(".feature__list")
     .prepend(featureList[featureList.length - 1]);
+});
+
+/// add cart
+// get parent element
+
+function getParentElement(element, selector) {
+  while (element.parentElement) {
+    if (element.parentElement.matches(selector)) {
+      return element.parentElement;
+    }
+    element = element.parentElement;
+  }
+}
+
+const addCartBtns = document.querySelectorAll(".add-cart-btn");
+
+function handleAddCart(btn) {
+  let parent = getParentElement(btn, ".product__item");
+  let id = parent.dataset.set;
+  console.log(products);
+  let product = products.find((item) => item.id == id);
+  cart.push(product);
+  
+}
+
+addCartBtns.forEach((btn) => {
+  btn.addEventListener("click",(e) => handleAddCart(e.target));
 });

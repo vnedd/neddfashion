@@ -1,3 +1,5 @@
+import cart from "./cart.js";
+import favorites from "./favorites.js";
 //header search
 
 const searchBox = document.querySelector(".header__search-box");
@@ -53,20 +55,17 @@ function hideLoginModal() {
 loginOverlay.addEventListener("click", hideLoginModal);
 loginCloseBtn.addEventListener("click", hideLoginModal);
 
-
 ////scroll to top
-const scrollTopBtn = document.getElementById('scroll-to-top')
+const scrollTopBtn = document.getElementById("scroll-to-top");
 
 window.onscroll = () => {
-  scrollTopBtn.style.display = window.scrollY > 1000 ?  'block' :'none';
-}
+  scrollTopBtn.style.display = window.scrollY > 1000 ? "block" : "none";
+};
 
 function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-  
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
-scrollTopBtn.addEventListener('click', scrollToTop)
-
+scrollTopBtn.addEventListener("click", scrollToTop);
 
 /// contact page scroll
 
@@ -81,7 +80,34 @@ window.addEventListener("scroll", (e) => {
     if (isInViewport(elm)) {
       elm.classList.add("start-showing");
     } else {
-        elm.classList.remove("start-showing");
+      elm.classList.remove("start-showing");
     }
   });
 });
+
+//render card count
+
+function renderCartCount() {
+  const cartCountElm = document.querySelector(".header__services-cart-quantity");
+  let cartCount = getcartCount();
+  cartCountElm.innerHTML = cartCount;
+}
+
+function getcartCount() {
+  return cart.length.toString();
+}
+renderCartCount();
+
+
+/// render favorite count
+
+function renderFavoriteCount() {
+  const favoriteCountElm = document.querySelector(".header__services-favorite-quantity");
+  let favoriteCount = getFavoriteCount();
+  favoriteCountElm.innerHTML = favoriteCount;
+}
+
+function getFavoriteCount() {
+  return favorites.length.toString();
+}
+renderFavoriteCount();
