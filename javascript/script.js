@@ -58,7 +58,7 @@ loginCloseBtn.addEventListener("click", hideLoginModal);
 const scrollTopBtn = document.getElementById('scroll-to-top')
 
 window.onscroll = () => {
-  scrollTopBtn.style.display = window.scrollY > 700 ?  'block' :'none';
+  scrollTopBtn.style.display = window.scrollY > 1000 ?  'block' :'none';
 }
 
 function scrollToTop() {
