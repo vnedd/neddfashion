@@ -157,14 +157,40 @@
                     </div>
                     <div class="col col-lg-1 col-md-2 col-sm-0">
                         <div class="header__services">
-                            <a class="header__services-favorite href="favorite_page.html">
+                            <a class="header__services-favorite href=" favorite_page.html">
                                 <i class="fa-regular fa-heart"></i>
-                                <span class="header__services-favorite-quantity">2</span>
+                                <span class="header__services-favorite-quantity"></span>
                             </a>
-                            <a class="header__services-cart" href="cart_page.html">
-                                <i  class="fa-solid fa-cart-arrow-down"></i>
-                                <span class="header__services-cart-quantity">2</span>
-                            </a>
+                            <div class="header__services-cart" >
+                                <a href="cart_page.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                                <span class="header__services-cart-quantity"></span>
+                                <div class="header__services-cart-wrapper">
+                                    <ul class="header__services-cart-list">
+                                        <!-- <li class="header__services-cart-item">
+                                            <div class="header__services-cart-item-img">
+                                                <img src="img/products/men/men_3.jpg" alt="">
+                                            </div>
+                                            <div class="header__services-cart-item-info">
+                                                <h2 class="header__services-cart-item-name">
+                                                    Mango People T-shirt
+                                                </h2>
+                                                <p class="header__services-cart-item-price">X<span>1</span>$52.00</p>
+                                            </div>
+                                            <div class="header__services-cart-item-close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                    <div class="header__services-cart-link">
+                                        <a href="cart_page.html" class="header__services-cart-view">
+                                            View Cart
+                                        </a>
+                                    </div>
+                                    <div class="header__services-cart-empty">
+                                        <p class="header__services-cart-empty-text">No products in the cart.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,8 +224,7 @@
                 <div class="row">
                     <div class="col col-lg-8 col-md-12 col-sm-12">
                         <div class="cart__list">
-                            <div class="col col-lg-12"></div>
-                            <div class="cart__item">
+                            <!-- <div class="cart__item">
                                 <div class="cart__item-img">
                                     <img src="img/products/women/women_7.jpg">
                                 </div>
@@ -227,8 +252,8 @@
                                 <div class="cart__item-delete">
                                     <i class="fa-solid fa-xmark"></i>
                                 </div>
-                            </div>
-                            <div class="cart__item">
+                            </div> -->
+                            <!-- <div class="cart__item">
                                 <div class="cart__item-img">
                                     <img src="img/products/women/women_3.jpg">
                                 </div>
@@ -285,7 +310,7 @@
                                 <div class="cart__item-delete">
                                     <i class="fa-solid fa-xmark"></i>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col col-lg-4 col-md-12 col-sm-12">
@@ -298,38 +323,40 @@
                                 <h2 class="cart__total-product-heading">
                                     Item(s)
                                 </h2>
-                                <div class="cart__total-product-item">
-                                    <p class="cart__total-product-item-name">
-                                        Zip-pockets pebbled tote briefcase
-                                    </p>
-                                    <p class="cart__total-product-item-quantity">
-                                        x<span>1</span>
-                                    </p>
-                                    <p class="cart__total-product-item-price">
-                                        $<span>49</span>
-                                    </p>
-                                </div>
-                                <div class="cart__total-product-item">
-                                    <p class="cart__total-product-item-name">
-                                        Cotton shirt
-                                    </p>
-                                    <p class="cart__total-product-item-quantity">
-                                        x<span>1</span>
-                                    </p>
-                                    <p class="cart__total-product-item-price">
-                                        $<span>25</span>
-                                    </p>
-                                </div>
-                                <div class="cart__total-product-item">
-                                    <p class="cart__total-product-item-name">
-                                        Turquoise cactus field
-                                    </p>
-                                    <p class="cart__total-product-item-quantity">
-                                        x<span>1</span>
-                                    </p>
-                                    <p class="cart__total-product-item-price">
-                                        $<span>99</span>
-                                    </p>
+                                <div class="cart__total-product-wrapper">
+                                    <div class="cart__total-product-item">
+                                        <p class="cart__total-product-item-name">
+                                            Zip-pockets pebbled tote briefcase
+                                        </p>
+                                        <p class="cart__total-product-item-quantity">
+                                            x<span>1</span>
+                                        </p>
+                                        <p class="cart__total-product-item-price">
+                                            $<span>49</span>
+                                        </p>
+                                    </div>
+                                    <div class="cart__total-product-item">
+                                        <p class="cart__total-product-item-name">
+                                            Cotton shirt
+                                        </p>
+                                        <p class="cart__total-product-item-quantity">
+                                            x<span>1</span>
+                                        </p>
+                                        <p class="cart__total-product-item-price">
+                                            $<span>25</span>
+                                        </p>
+                                    </div>
+                                    <div class="cart__total-product-item">
+                                        <p class="cart__total-product-item-name">
+                                            Turquoise cactus field
+                                        </p>
+                                        <p class="cart__total-product-item-quantity">
+                                            x<span>1</span>
+                                        </p>
+                                        <p class="cart__total-product-item-price">
+                                            $<span>99</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="cart__total-subtotal">
@@ -626,7 +653,7 @@
 
     </div>
     <script type="module" src="javascript/script.js"></script>
-    <script src="javascript/cart_page.js"></script>
+    <script type="module" src="javascript/cart_page.js"></script>
 </body>
 
 </html>
