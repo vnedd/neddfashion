@@ -2408,6 +2408,9 @@ img {
 
     &__icon-favo {
         top: 10px;
+        &.active {
+            background-color: $underline-color;
+        }
     }
 
     &__icon-cart {
@@ -2427,7 +2430,7 @@ img {
         &-auth {
             font-size: 1.4rem;
             color: $text-gray-color;
-            margin: 10px 0;
+            margin: 20px 0;
         }
     }
 

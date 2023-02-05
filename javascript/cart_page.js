@@ -7,10 +7,7 @@ import {
 } from "./script.js";
 import products from "./products.js";
 
-
-const shippingOptions = document.querySelectorAll(
-  ".cart__total-shipping-item"
-);
+const shippingOptions = document.querySelectorAll(".cart__total-shipping-item");
 const inputShippingOptions = document.querySelectorAll(
   ".cart__total-shipping-item input"
 );
@@ -19,8 +16,10 @@ const inputShippingOptions = document.querySelectorAll(
 
 function renderCartItem() {
   const cartWrapper = document.querySelector(".cart__list");
-  const cartTotalWrapper = document.querySelector(".cart__total-product-wrapper");
- 
+  const cartTotalWrapper = document.querySelector(
+    ".cart__total-product-wrapper"
+  );
+
   if (localStorage.getItem("carts") == null) {
     localStorage.setItem("carts", "[]");
   }
@@ -34,6 +33,7 @@ function renderCartItem() {
     let cartTotalItem = document.createElement("div");
     cartTotalItem.setAttribute("class", "cart__total-product-item");
     cartItem.setAttribute("class", "cart__item");
+    cartItem.setAttribute("data-set", product.id);
     cartItem.innerHTML = `
     <div class="cart__item-img">
         <img src="${product.image}">
@@ -85,7 +85,7 @@ function renderCartItem() {
 
   inscreaseQuantityBtns.forEach((btn, index) => {
     btn.addEventListener("click", (e) =>
-      handleIncreaseQuantity(e.target, index,cartTotalList)
+      handleIncreaseQuantity(e.target, index, cartTotalList)
     );
   });
 
@@ -95,22 +95,20 @@ function renderCartItem() {
   );
   decreaseQuantityBtns.forEach((btn, index) => {
     btn.addEventListener("click", (e) =>
-      handleDecreaseQuantity(e.target, index,cartTotalList)
+      handleDecreaseQuantity(e.target, index, cartTotalList)
     );
   });
 
-  
   const quantityInputs = document.querySelectorAll(
     ".cart__item-quantity-input"
   );
 
-  checkQuantityInput(quantityInputs,cartTotalList);
-   
+  checkQuantityInput(quantityInputs, cartTotalList);
 }
 renderCartItem();
 // increase quantity
 
-function handleIncreaseQuantity(btn, index,cartTotalList) {
+function handleIncreaseQuantity(btn, index, cartTotalList) {
   const parentElm = getParentElement(btn, ".cart__item");
   const quantityInput = parentElm.querySelector(".cart__item-quantity-input");
   let value = parseInt(quantityInput.value);
@@ -182,7 +180,7 @@ function checkQuantityInput(quantityInputs, cartTotalList) {
 }
 
 // cauclator subtotal
-
+const cartTotalList = document.querySelectorAll(".cart__total-product-item");
 function caculatorSubTotal(cartTotalList) {
   let total = Array.from(cartTotalList).reduce((acc, item) => {
     let price = item.querySelector(
@@ -192,9 +190,7 @@ function caculatorSubTotal(cartTotalList) {
   }, 0);
   document.querySelector(".cart__total-subtotal-price span").innerText = total;
 }
-
-
-
+caculatorSubTotal(cartTotalList);
 // render total;
 function caculatorTotal() {
   let subtotal = document.querySelector(
@@ -231,7 +227,7 @@ removeProductInCart();
 // remove product in list
 function removeProductCartInList() {
   const removeBtns = document.querySelectorAll(".cart__item-delete");
-  if(removeBtns.length > 0) {
+  if (removeBtns.length > 0) {
     removeBtns.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         let parent = getParentElement(e.target, ".cart__item");
@@ -240,6 +236,7 @@ function removeProductCartInList() {
         let cartStorages = JSON.parse(localStorage.getItem("carts"));
         cartStorages.splice(cartStorages.indexOf(id), 1);
         localStorage.setItem("carts", JSON.stringify(cartStorages));
+        document.querySelector(".cart__header span").innerHTML = cartStorages.length;
         renderCartCount();
         renderCartActivebtn();
         if (cartStorages.length == 0) {
@@ -253,7 +250,6 @@ function removeProductCartInList() {
       });
     });
   }
-  
 }
 
 removeProductCartInList();

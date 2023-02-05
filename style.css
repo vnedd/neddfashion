@@ -2264,6 +2264,9 @@ img {
 .favorite__icon-favo {
   top: 10px;
 }
+.favorite__icon-favo.active {
+  background-color: #ce0003;
+}
 .favorite__icon-cart {
   top: 46px;
 }
@@ -2283,7 +2286,7 @@ img {
 .favorite__details-auth {
   font-size: 1.4rem;
   color: #666;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .cart__header {

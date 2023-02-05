@@ -234,7 +234,6 @@ function renderFavoriteActivebtn() {
 
 //render cart list
 function renderCartList() {
-  console.log(location.href)
   if (localStorage.getItem("carts") == null) {
     localStorage.setItem("carts", "[]");
   }
