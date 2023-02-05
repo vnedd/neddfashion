@@ -73,7 +73,7 @@ function renderProducts(options) {
     }
 
     productElm.innerHTML = `
-            <div href="product_page.html" class="product__item" data-set="${item.id}">
+            <div  class="product__item" data-set="${item.id}">
                 <p class="product__status product__status-${item.status}">
                 <span>
                     ${textStatus} 
@@ -82,7 +82,7 @@ function renderProducts(options) {
                 <div class="product__img">
                     <img src="${item.image}" alt="${item.title}">
                 </div>
-                <a class="product__details">
+                <a href="product_page.html" class="product__details">
                     <p class="product__name">${item.title}</p>
                     <div class="product__rating">
                         ${starElm}

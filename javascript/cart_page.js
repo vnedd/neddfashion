@@ -238,6 +238,7 @@ function removeProductCartInList() {
         localStorage.setItem("carts", JSON.stringify(cartStorages));
         document.querySelector(".cart__header span").innerHTML = cartStorages.length;
         renderCartCount();
+        renderCartList();
         renderCartActivebtn();
         if (cartStorages.length == 0) {
           document
@@ -246,6 +247,7 @@ function removeProductCartInList() {
           document
             .querySelector(".header__services-cart-empty")
             .classList.remove("hide");
+            document.querySelector(".cart__header span").innerHTML = cartStorages.length;
         }
       });
     });
