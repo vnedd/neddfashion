@@ -35,7 +35,7 @@ function renderProduct() {
                 <div class="product__img">
                     <img src="${item.image[0]}" alt="${item.title}">
                 </div>
-                <a hresf="product_page.html" class="product__details">
+                <a href="product_page.html" class="product__details">
                     <p class="product__name">${item.title}</p>
                     <div class="product__rating">
                         <i class="product__rating-star fa-solid fa-star"></i>
