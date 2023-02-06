@@ -1870,11 +1870,11 @@ img {
 
         &-item {
             cursor: pointer;
-            width: calc(100% / 5 - 7.5px);
+            width: 100%;
             height: 100%;
+            margin: 0 5px;
             border-radius: 5px;
             overflow: hidden;
-
             &.active {
                 border: 3px solid $text-color;
             }
@@ -1893,10 +1893,8 @@ img {
             text-align: center;
             line-height: 50px;
             border: 1px solid currentColor;
+            background-color: rgba(0, 0, 0, 0.4);
 
-            &:hover {
-                background-color: rgba(0, 0, 0, 0.4);
-            }
         }
 
         &-prev {

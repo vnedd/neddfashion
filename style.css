@@ -1765,8 +1765,9 @@ img {
 }
 .product-page__img-item {
   cursor: pointer;
-  width: calc(20% - 7.5px);
+  width: 100%;
   height: 100%;
+  margin: 0 5px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -1785,8 +1786,6 @@ img {
   text-align: center;
   line-height: 50px;
   border: 1px solid currentColor;
-}
-.product-page__img-btn:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .product-page__img-prev {

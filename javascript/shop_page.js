@@ -6,6 +6,7 @@ import {
     removeProductInCart,
     handleAddCart,
     handleAddFavorite,
+    getParentElement,
 } from "./script.js";
 
 
@@ -32,9 +33,9 @@ function renderProduct() {
                 </span>
                 </p>
                 <div class="product__img">
-                    <img src="${item.image}" alt="${item.title}">
+                    <img src="${item.image[0]}" alt="${item.title}">
                 </div>
-                <a href="product_page.html" class="product__details">
+                <a hresf="product_page.html" class="product__details">
                     <p class="product__name">${item.title}</p>
                     <div class="product__rating">
                         <i class="product__rating-star fa-solid fa-star"></i>
@@ -82,3 +83,14 @@ addFavoriteBtns.forEach((btn) => {
 //
 renderCartList();
 removeProductInCart();
+
+// open product page details
+const productDetailLinks = document.querySelectorAll(".product__details");
+
+productDetailLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+  let parent = getParentElement(e.target, ".product__item")
+  let id = parent.dataset.set;
+  localStorage.setItem("productDetails", id);
+  });
+})

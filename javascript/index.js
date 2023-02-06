@@ -6,7 +6,8 @@ import {
   renderCartList,
   removeProductInCart,
   handleAddCart,
-  handleAddFavorite
+  handleAddFavorite,
+  getParentElement
 } from "./script.js";
 
 //banner slider home page
@@ -73,14 +74,14 @@ function renderProducts(options) {
     }
 
     productElm.innerHTML = `
-            <div  class="product__item" data-set="${item.id}">
+            <div class="product__item" data-set="${item.id}">
                 <p class="product__status product__status-${item.status}">
                 <span>
                     ${textStatus} 
                 </span>
                 </p>
                 <div class="product__img">
-                    <img src="${item.image}" alt="${item.title}">
+                    <img src="${item.image[0]}" alt="${item.title}">
                 </div>
                 <a href="product_page.html" class="product__details">
                     <p class="product__name">${item.title}</p>
@@ -177,3 +178,17 @@ renderCartList();
 
 //remove product in cart
 removeProductInCart();
+
+
+
+/// 
+// open product page details
+const productDetailLinks = document.querySelectorAll(".product__details");
+
+productDetailLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+  let parent = getParentElement(e.target, ".product__item")
+  let id = parent.dataset.set;
+  localStorage.setItem("productDetails", id);
+  });
+})

@@ -10,7 +10,14 @@ const products = [
       category: "men's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/men/men_1.jpg",
+      image: [
+        "img/products/men/men_1.jpg",
+        "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+
+      ],
       rating: {
         rate: 3.9,
         count: 120,
@@ -27,7 +34,13 @@ const products = [
       category: "men's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/men/men_2.jpg",
+      image: [
+        "img/products/men/men_2.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.5,
         count: 253,
@@ -44,7 +57,13 @@ const products = [
       category: "men's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/men/men_3.jpg",
+      image: [
+        "img/products/men/men_3.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 253,
@@ -62,7 +81,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "men's clothing",
-      image: "img/products/men/men_4.jpg",
+      image: [
+        "img/products/men/men_4.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.6,
         count: 5621,
@@ -80,7 +105,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "men's clothing",
-      image: "img/products/men/men_5.jpg",
+      image: [
+        "img/products/men/men_5.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.1,
         count: 136,
@@ -97,7 +128,13 @@ const products = [
       category: "men's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/men/men_6.jpg",
+      image: [
+        "img/products/men/men_6.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.1,
         count: 2344,
@@ -111,7 +148,13 @@ const products = [
       panel:'women',
       description: "Women Summer Cotton dresses Nine-point Sleeves dress long",
       category: "women's clothing",
-      image: "img/products/women/women_1.jpg",
+      image: [
+        "img/products/women/women_1.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       inCart: false,
       inFavorites: false,
       rating: {
@@ -131,7 +174,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_2.jpg",
+      image: [
+        "img/products/women/women_2.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 7345,
@@ -148,7 +197,13 @@ const products = [
       category: "women's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/women/women_3.jpg",
+      image: [
+        "img/products/women/women_3.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 122,
@@ -166,7 +221,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_4.jpg",
+      image: [
+        "img/products/women/women_4.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 521,
@@ -183,7 +244,13 @@ const products = [
       category: "women's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/women/women_5.jpg",
+      image: [
+        "img/products/women/women_5.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 245,
@@ -201,7 +268,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_6.jpg",
+      image: [
+        "img/products/women/women_6.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 427,
@@ -219,7 +292,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_7.jpg",
+      image: [
+        "img/products/women/women_7.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 3642,
@@ -237,7 +316,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_8.jpg",
+      image: [
+        "img/products/women/women_8.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 2341,
@@ -255,7 +340,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_9.jpg",
+      image: [
+        "img/products/women/women_9.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 8345,
@@ -273,7 +364,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_10.jpg",
+      image: [
+        "img/products/women/women_10.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 4124,
@@ -292,7 +389,13 @@ const products = [
       inCart: false,
       inFavorites: false,
         category: "women's clothing",
-      image: "img/products/women/women_11.jpg",
+      image: [
+        "img/products/women/women_11.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 3745,
@@ -309,7 +412,13 @@ const products = [
       category: "women's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/women/women_12.jpg",
+      image: [
+        "img/products/women/women_12.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 4124,
@@ -326,7 +435,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_1.jpg",
+      image: [
+        "img/products/kid/kid_1.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 461,
@@ -343,7 +458,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_2.jpg",
+      image: [
+        "img/products/kid/kid_2.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 1445,
@@ -360,7 +481,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_3.jpg",
+      image: [
+        "img/products/kid/kid_3.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.2,
         count: 1467,
@@ -377,7 +504,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_4.jpg",
+      image: [
+        "img/products/kid/kid_4.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 8292,
@@ -394,7 +527,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_5.jpg",
+      image: [
+        "img/products/kid/kid_5.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 2721,
@@ -411,7 +550,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_6.jpg",
+      image: [
+        "img/products/kid/kid_6.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 2721,
@@ -428,7 +573,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_7.jpg",
+      image: [
+        "img/products/kid/kid_7.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 853,
@@ -445,7 +596,13 @@ const products = [
       category: "kid's clothing",
       inCart: false,
       inFavorites: false,
-      image: "img/products/kid/kid_8.jpg",
+      image: [
+        "img/products/kid/kid_8.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 145,
@@ -462,7 +619,13 @@ const products = [
       category: "accessories",
       inCart: false,
       inFavorites: false,
-      image: "img/products/accessories/accessories_1.jpg",
+      image: [
+        "img/products/accessories/accessories_1.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 712,
@@ -479,7 +642,13 @@ const products = [
       category: "accessories",
       inCart: false,
       inFavorites: false,
-      image: "img/products/accessories/accessories_2.jpg",
+      image: [
+        "img/products/accessories/accessories_2.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 712,
@@ -496,7 +665,13 @@ const products = [
       category: "accessories",
       inCart: false,
       inFavorites: false,
-      image: "img/products/accessories/accessories_3.jpg",
+      image: [
+        "img/products/accessories/accessories_3.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 712,
@@ -513,7 +688,13 @@ const products = [
       category: "accessories",
       inCart: false,
       inFavorites: false,
-      image: "img/products/accessories/accessories_4.jpg",
+      image: [
+        "img/products/accessories/accessories_4.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 712,
@@ -530,7 +711,13 @@ const products = [
       category: "accessories",
       inCart: false,
       inFavorites: false,
-      image: "img/products/accessories/accessories_5.jpg",
+      image: [
+        "img/products/accessories/accessories_5.jpg",
+         "img/products/single__page/1.jpg",
+        "img/products/single__page/2.jpg",
+        "img/products/single__page/3.jpg",
+        "img/products/single__page/4.jpg",
+      ],
       rating: {
         rate: 4.9,
         count: 712,
