@@ -250,7 +250,7 @@ function renderCartList() {
       cartList.innerHTML += `
       <li class="header__services-cart-item" data-set="${product.id}">
       <div class="header__services-cart-item-img">
-          <img src="${product.image}" alt="">
+          <img src="${product.image[0]}" alt="">
       </div>
       <div class="header__services-cart-item-info">
           <h2 class="header__services-cart-item-name">

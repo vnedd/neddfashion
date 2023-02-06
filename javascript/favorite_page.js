@@ -42,7 +42,7 @@ function renderFavoriteList() {
             <i class="fa fa-solid fa-heart"></i>
         </div>
         <div class="favorite__img">
-            <img src="${product.image}">
+            <img src="${product.image[0]}">
         </div>
         <a href="product_page.html" class="favorite__details">
             <p class="favorite__details-title">
