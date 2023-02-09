@@ -78,7 +78,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: 30px;
-  background-color: #ce0003;
+  background-color: #111111;
   transform: scale(0);
   opacity: 0;
   transition: all 0.4s;
@@ -615,8 +615,12 @@ img {
     opacity: 1;
   }
 }
+.main-content {
+  margin-bottom: 50px;
+}
+
 .banner {
-  margin-top: 94px;
+  margin: 94px 0 70px 0;
   width: 100%;
 }
 .banner__large {
@@ -624,6 +628,7 @@ img {
   overflow: hidden;
   width: 100%;
   height: 600px;
+  margin-bottom: 10px;
 }
 .banner__large-list {
   width: 100%;
@@ -709,7 +714,6 @@ img {
   right: 5%;
 }
 .banner__small {
-  margin-top: 10px;
   width: 100%;
 }
 .banner__small-item {
@@ -729,7 +733,7 @@ img {
   transition: all 0.5s;
 }
 .banner__small-item:hover .banner__small-item-img {
-  filter: brightness(80%);
+  filter: brightness(70%);
 }
 .banner__small-item:hover .banner__small-item-content {
   top: 50%;
@@ -769,12 +773,11 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 
 .product {
-  margin: 80px 0 50px 0;
-  width: 100%;
+  margin: 90px 0 50px 0;
 }
 .product__header {
   width: 100%;
@@ -795,7 +798,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 .product__header-menu-list {
   display: flex;
@@ -820,7 +823,10 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
+}
+.product__wrapper {
+  margin-bottom: 50px;
 }
 .product__list {
   display: none;
@@ -866,8 +872,8 @@ img {
   background-color: #111111;
 }
 .product__status-discount {
-  color: #ce0003;
-  background-color: #ce0003;
+  color: #111111;
+  background-color: #111111;
 }
 .product__img {
   width: 100%;
@@ -972,7 +978,6 @@ img {
 }
 
 .category {
-  margin-bottom: 50px;
   padding: 20px;
   overflow: hidden;
 }
@@ -989,7 +994,10 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
+}
+.category__content {
+  margin-bottom: 50px;
 }
 .category__item {
   height: 515px;
@@ -1060,7 +1068,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 .feature__wrapper {
   max-width: 100%;
@@ -1144,9 +1152,6 @@ img {
   right: 5%;
 }
 
-.home__blog {
-  margin: 70px 0 50px 0;
-}
 .home__blog-header {
   font-size: 2.5rem;
   margin-bottom: 35px;
@@ -1160,7 +1165,10 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
+}
+.home__blog-wrapper {
+  margin-bottom: 50px;
 }
 .home__blog-item {
   background: #ffffff;
@@ -1210,7 +1218,7 @@ img {
 }
 .home__blog-item-readmore:hover {
   display: inline-block;
-  color: #ce0003;
+  color: #111111;
 }
 .home__blog-viewmore {
   margin: 30px 0 20px 0;
@@ -1354,7 +1362,7 @@ img {
   right: 0;
   color: #ffffff;
   font-size: 1.5rem;
-  background-color: #ce0003;
+  background-color: #111111;
   width: 120px;
   height: 100%;
   cursor: pointer;
@@ -1395,6 +1403,7 @@ img {
 
 .page__path {
   margin-top: 119px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1438,7 +1447,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 
 .sidebar-categories {
@@ -1819,7 +1828,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 .product-page__info-name {
   font-size: 2.6rem;
@@ -2148,7 +2157,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 .similar__wrapper {
   max-width: 1200px;
@@ -2264,7 +2273,7 @@ img {
   top: 10px;
 }
 .favorite__icon-favo.active {
-  background-color: #ce0003;
+  background-color: #111111;
 }
 .favorite__icon-cart {
   top: 46px;
@@ -2784,7 +2793,7 @@ img {
   width: 100%;
   height: 2px;
   bottom: -3px;
-  background-color: #ce0003;
+  background-color: #111111;
 }
 .about__story {
   margin-top: 50px;

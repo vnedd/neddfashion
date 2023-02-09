@@ -1,7 +1,7 @@
 $text-color: #111111;
 $text-gray-color: #666;
 $text-white-color: #ffffff;
-$underline-color: #ce0003;
+$underline-color: #111111;
 
 * {
     padding: 0;
@@ -76,7 +76,6 @@ img {
 #app {
     width: 100%;
 }
-
 
 .header {
     width: 100%;
@@ -665,9 +664,12 @@ img {
         opacity: 1;
     }
 }
+.main-content {
+    margin-bottom: 50px;
+}
 
 .banner {
-    margin-top: 94px;
+    margin: 94px 0 70px 0;
     width: 100%;
 
     &__large {
@@ -675,7 +677,7 @@ img {
         overflow: hidden;
         width: 100%;
         height: 600px;
-
+        margin-bottom: 10px;
         &-list {
             width: 100%;
         }
@@ -777,7 +779,6 @@ img {
     }
 
     &__small {
-        margin-top: 10px;
         width: 100%;
 
         &-item {
@@ -794,7 +795,7 @@ img {
             }
 
             &:hover &-img {
-                filter: brightness(80%);
+                filter: brightness(70%);
             }
 
             &:hover &-content {
@@ -840,9 +841,7 @@ img {
 
 
 .product {
-    margin: 80px 0 50px 0;
-    width: 100%;
-
+    margin: 90px 0 50px 0;
     &__header {
         width: 100%;
         margin-bottom: 30px;
@@ -874,6 +873,9 @@ img {
         }
     }
 
+    &__wrapper {
+        margin-bottom: 50px;
+    }
     &__list {
         display: none;
     }
@@ -1048,7 +1050,6 @@ img {
 
 
 .category {
-    margin-bottom: 50px;
     padding: 20px;
     overflow: hidden;
 
@@ -1059,6 +1060,9 @@ img {
         text-transform: uppercase;
     }
 
+    &__content {
+        margin-bottom: 50px;
+    }
     &__item {
         height: 515px;
         position: relative;
@@ -1230,13 +1234,14 @@ img {
 }
 
 .home__blog {
-    margin: 70px 0 50px 0;
-
     &-header {
         font-size: 2.5rem;
         margin-bottom: 35px;
         text-transform: uppercase;
         @include underLineBefore();
+    }
+    &-wrapper {
+        margin-bottom: 50px;
     }
 
     &-item {
@@ -1491,7 +1496,7 @@ img {
 
 .page__path {
     margin-top: 119px;
-
+    margin-bottom: 50px;
     @include flex(center);
 
     &-home {
