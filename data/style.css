@@ -2829,6 +2829,7 @@ img {
   text-transform: uppercase;
 }
 .about__member-item {
+  margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
