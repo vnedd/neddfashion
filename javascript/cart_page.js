@@ -36,7 +36,7 @@ function renderCartItem() {
     cartItem.setAttribute("data-set", product.id);
     cartItem.innerHTML = `
     <div class="cart__item-img">
-        <img src="${product.image}">
+        <img src="${product.image[0]}">
     </div>
     <div class="cart__item-details">
         <p class="cart__item-details-name">
