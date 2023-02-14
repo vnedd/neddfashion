@@ -181,6 +181,8 @@ img {
 }
 .header__search-history-list {
   overflow: hidden;
+  height: 100%;
+  overflow-y: auto;
 }
 .header__search-history-item {
   width: 100%;
@@ -303,11 +305,17 @@ img {
 }
 .header__services-cart-list {
   width: 100%;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.header__services-cart-list::-webkit-scrollbar {
+  display: none;
 }
 .header__services-cart-item {
   width: 100%;
   height: 80px;
   margin-bottom: 15px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -621,17 +629,12 @@ img {
 
 .banner {
   margin: 94px 0 70px 0;
-  width: 100%;
 }
 .banner__large {
   position: relative;
   overflow: hidden;
-  width: 100%;
   height: 600px;
   margin-bottom: 10px;
-}
-.banner__large-list {
-  width: 100%;
 }
 .banner__large-item {
   width: 100%;
@@ -942,9 +945,11 @@ img {
 }
 .product__services {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -4%);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -955,26 +960,41 @@ img {
   transition: all 0.5s;
 }
 .product__services-favorite, .product__services-add-cart {
-  width: 40px;
-  margin: 0 5px;
-  height: 40px;
+  width: 50%;
+  height: 50px;
   color: #ffffff;
   cursor: pointer;
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
   font-size: 1.8rem;
-  border-radius: 50%;
   background-color: rgba(45, 45, 45, 0.3);
   transition: all 0.3s;
 }
 .product__services-favorite.active, .product__services-add-cart.active {
-  background-color: green;
+  background-color: #111111;
 }
-.product__services-favorite:hover, .product__services-add-cart:hover {
-  transform: rotate(360deg);
+.product__services-favorite:hover i, .product__services-add-cart:hover i {
+  animation: shakeAnimation 0.4s ease-in;
+}
+@keyframes shakeAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .product__services-favorite.active {
-  background-color: red;
+  background-color: #cd0000;
 }
 
 .category {

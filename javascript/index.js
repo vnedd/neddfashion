@@ -113,6 +113,8 @@ function renderProducts(options) {
 
 renderProducts(products);
 
+
+
 const productPanels = document.querySelectorAll(".product__panel");
 
 productPanels.forEach((panel) => {
