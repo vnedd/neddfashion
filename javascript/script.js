@@ -80,7 +80,7 @@ function scrollToTop() {
 }
 scrollTopBtn.addEventListener("click", scrollToTop);
 
-/// contact page scroll
+/// about us page scroll
 
 function isInViewport(elm) {
   let rectElm = elm.getBoundingClientRect();

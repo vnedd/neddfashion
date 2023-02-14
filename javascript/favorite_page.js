@@ -5,6 +5,7 @@ import {
   removeProductInCart,
   renderFavoriteCount,
   renderCartActivebtn,
+  renderCartCount,
 } from "./script.js";
 
 const similarWrapper = document.querySelector(".similar__wrapper");
@@ -75,3 +76,7 @@ function removeFavoritedItem() {
   });
 }
 removeFavoritedItem();
+
+renderCartList();
+renderCartCount();
+removeProductInCart();
